@@ -1,0 +1,37 @@
+{
+  "name": "wave-accessibility-audit",
+  "version": "1.0.0",
+  "description": "A clean WAVE accessibility analyzer for CI/CD - requires environment variables for configuration",
+  "main": "analyzer.js",
+  "scripts": {
+    "wave-test": "npx ts-node run-test.ts",
+    "wave-test:headless": "HEADLESS=true npx ts-node run-test.ts",
+    "install-browsers": "npx playwright install --with-deps chromium",
+    "update-browsers": "npx playwright install --force",
+    "check-browsers": "npx playwright install --dry-run"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "wave",
+    "web-accessibility",
+    "audit",
+    "analyzer",
+    "playwright",
+    "automation",
+    "ci-cd"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
